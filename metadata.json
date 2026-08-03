@@ -1,0 +1,6 @@
+{
+  "name": "Baú da Edição Magnética",
+  "description": "Página de vendas VSL ultra-premium para o Baú da Edição Magnética. Recursos cinematográficos, efeitos visuais, áudios, presets e templates para editores de vídeo de alto nível.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
