@@ -1,5 +1,6 @@
 import React from 'react';
 import { ShieldCheck, Zap, Star, Eye, Layers, Sparkles, CheckCircle2, ArrowRight } from 'lucide-react';
+import magneticChestHero from '../assets/images/magnetic_chest_hero_1784827501379.jpg';
 
 interface HeroProps {
   onOpenCheckout: () => void;
@@ -90,7 +91,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenCheckout, onScrollToVideo }) =
               {/* Image Hero Mockup */}
               <div className="relative rounded-2xl overflow-hidden bg-neutral-950 border border-yellow-500/30 aspect-[16/9] flex items-center justify-center">
                 <img
-                  src="/src/assets/images/magnetic_chest_hero_1784827501379.jpg"
+                  src={magneticChestHero}
                   alt="Baú da Edição Magnética 3D Mockup"
                   loading="eager"
                   fetchPriority="high"

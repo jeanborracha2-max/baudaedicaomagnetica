@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Star, TrendingUp, Users, Award, Zap, Sliders, Check, X } from 'lucide-react';
 import { BEFORE_AFTER_COMPARISON } from '../data/packData';
+import magneticChestHero from '../assets/images/magnetic_chest_hero_1784827501379.jpg';
+import vslThumbnailCover from '../assets/images/vsl_thumbnail_cover_1784827513327.jpg';
 
 export const SocialProof: React.FC = () => {
   const [sliderPosition, setSliderPosition] = useState(50);
@@ -101,7 +103,7 @@ export const SocialProof: React.FC = () => {
             {/* "AFTER" (Magnetic Edition) Background Image */}
             <div className="absolute inset-0 bg-neutral-900">
               <img
-                src="/src/assets/images/magnetic_chest_hero_1784827501379.jpg"
+                src={magneticChestHero}
                 alt="Edição Magnética"
                 loading="lazy"
                 decoding="async"
@@ -127,7 +129,7 @@ export const SocialProof: React.FC = () => {
               style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
             >
               <img
-                src="/src/assets/images/vsl_thumbnail_cover_1784827513327.jpg"
+                src={vslThumbnailCover}
                 alt="Edição Comum"
                 loading="lazy"
                 decoding="async"

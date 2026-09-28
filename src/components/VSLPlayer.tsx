@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { Play, Volume2, VolumeX, Sparkles, Zap, Lock, ArrowRight } from 'lucide-react';
+import vslThumbnailCover from '../assets/images/vsl_thumbnail_cover_1784827513327.jpg';
 
 interface VSLPlayerProps {
   onOpenCheckout: () => void;
@@ -13,7 +14,7 @@ interface VSLPlayerProps {
 // Exemplo MP4: 'https://seusite.com/video.mp4'
 // ============================================================================
 const VIDEO_URL = 'https://youtu.be/LtgL6WE4d4E';
-const THUMBNAIL_URL = '/src/assets/images/vsl_thumbnail_cover_1784827513327.jpg';
+const THUMBNAIL_URL = vslThumbnailCover;
 
 function getEmbedDetails(url: string, autoPlay: boolean) {
   if (!url) return { type: 'video', src: '' };

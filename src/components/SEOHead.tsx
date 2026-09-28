@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { FAQ_DATA } from '../data/packData';
+import magneticChestHero from '../assets/images/magnetic_chest_hero_1784827501379.jpg';
 
 export const SEOHead: React.FC = () => {
   useEffect(() => {
@@ -24,7 +25,7 @@ export const SEOHead: React.FC = () => {
       { property: 'og:description', content: 'Transforme qualquer vídeo comum em uma produção de alto nível. +15.000 recursos VIP com acesso vitalício.' },
       { property: 'og:type', content: 'product' },
       { property: 'og:url', content: window.location.href },
-      { property: 'og:image', content: `${window.location.origin}/src/assets/images/magnetic_chest_hero_1784827501379.jpg` },
+      { property: 'og:image', content: `${window.location.origin}${magneticChestHero}` },
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:title', content: 'Baú da Edição Magnética - Recursos 4K para Editores' },
       { name: 'twitter:description', content: 'SFX, Overlays, LUTs, Presets e Templates de alta retenção para Premiere, CapCut e After Effects.' }
@@ -69,7 +70,7 @@ export const SEOHead: React.FC = () => {
       '@context': 'https://schema.org',
       '@type': 'Product',
       'name': 'Baú da Edição Magnética VIP',
-      'image': [`${window.location.origin}/src/assets/images/magnetic_chest_hero_1784827501379.jpg`],
+      'image': [`${window.location.origin}${magneticChestHero}`],
       'description': 'Acervo definitivo com mais de 15.000 recursos de edição de vídeo em 4K/8K, SFX, Overlays, LUTs, Presets e Templates de alta retenção.',
       'brand': {
         '@type': 'Brand',

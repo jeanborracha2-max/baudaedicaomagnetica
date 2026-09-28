@@ -1,5 +1,6 @@
 import React from 'react';
 import { ShieldCheck, CheckCircle2, Lock, ArrowRight } from 'lucide-react';
+import guaranteeSeal from '../assets/images/guarantee_seal_1784827524268.jpg';
 
 interface GuaranteeProps {
   onOpenCheckout: () => void;
@@ -18,7 +19,7 @@ export const GuaranteeSection: React.FC<GuaranteeProps> = ({ onOpenCheckout }) =
             <div className="md:col-span-4 flex justify-center">
               <div className="relative w-48 h-48 sm:w-56 sm:h-56 rounded-full p-1 bg-gradient-to-br from-yellow-300 via-amber-500 to-yellow-600 shadow-2xl animate-float">
                 <img
-                  src="/src/assets/images/guarantee_seal_1784827524268.jpg"
+                  src={guaranteeSeal}
                   alt="Selo de 7 Dias de Garantia Incondicional"
                   className="w-full h-full object-cover rounded-full filter drop-shadow-2xl"
                   referrerPolicy="no-referrer"
